@@ -1,0 +1,222 @@
+:root {
+    --text-color: #333;
+    --link-color: #337ab7;
+    --red-color: #c00;
+}
+body {
+    margin: 0;
+    min-width: 1000px;
+}
+body, textarea {
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    color: var(--text-color);
+}
+textarea {
+    padding: 0;
+}
+.invisible {
+    visibility: hidden;
+}
+
+
+:root {
+    --block-height: 50px;
+    --header-padding: 10px;
+}
+@define-mixin block {
+    height: var(--block-height);
+    line-height: var(--block-height);
+    border-width: 1px 0;
+    border-style: solid none;
+    border-color: #ebebeb;
+    background: #f8f8f8;
+}
+header {
+    @mixin block;
+}
+header .contacts {
+    float: right;
+    padding: 0 var(--header-padding);
+}
+header .title {
+    font-size: 20px;
+    padding: 0 var(--header-padding);
+}
+
+.content {
+    text-align: center;
+}
+
+footer {
+    @mixin block;
+    text-align: center;
+}
+
+
+.b-links {
+    position: fixed;
+    left: 20px;
+    top: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background: white;
+    font-size: 14px;
+    & a {
+        color: var(--link-color);
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
+
+
+:root {
+    --button-height: 30px;
+    --button-gray-background: white;
+    --button-gray-border-color: #ccc;
+}
+.b-button {
+    display: inline-block;
+    line-height: var(--button-height);
+    border: 1px solid var(--link-color);
+    padding: 0 15px;
+    outline: none;
+    color: #fff;
+    background: var(--link-color);
+    cursor: pointer;
+    font-size: 14px;
+    transition: box-shadow ease-in-out .15s;
+    &:hover {
+        border-color: color(var(--link-color) lightness(- 3%));
+        background: color(var(--link-color) lightness(- 3%));
+    }
+    &:focus {
+        box-shadow: 0 0 3px 0px var(--link-color);
+    }
+    &.gray {
+        border-color: var(--button-gray-border-color);
+        background: var(--button-gray-background);
+        color: var(--text-color);
+    }
+    &.gray:hover {
+        border-color: color(var(--button-gray-border-color) lightness(- 3%));
+        background: color(var(--button-gray-background) lightness(- 3%));
+    }
+    &.gray:focus {
+        box-shadow: 0 0 3px 0px var(--button-gray-border-color);
+    }
+}
+
+
+.site-outer-container {
+    overflow: hidden;
+}
+
+.b-popup-overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.2;
+    background: white;
+}
+
+.popup-wrapper {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+    & .popup-wrapper-2 {
+        border-collapse: collapse;
+        margin: auto;
+        & .popup-wrapper-3 {
+            padding: var(--popup-min-margin);
+        }
+    }
+}
+
+:root {
+    --popup-padding: 15px;
+}
+.b-popup {
+    background: white;
+    border: 1px solid #ddd;
+    &.position-fixed {
+        position: fixed;
+    }
+    &.position-absolute {
+        position: absolute;
+    }
+    & .popup-content {
+        padding: var(--popup-padding);
+        padding-bottom: 0;
+        text-align: center;
+        font-size: 14px;
+    }
+}
+
+:root {
+    --close-button-indent: 10px;
+}
+.b-popup-header {
+    height: 40px;
+    line-height: 40px;
+    padding: 0 var(--popup-padding);
+    border-bottom: 1px solid #ddd;
+    background: #f8f8f8;
+    & .title {
+        font-size: 14px;
+    }
+    & .close-button {
+        float: right;
+        line-height: 18px;
+        width: 18px;
+        margin-right: calc(var(--close-button-indent) - var(--popup-padding));
+        margin-top: 10px;
+        border: 1px solid #ddd;
+        text-align: center;
+        background: white;
+        font-size: 14px;
+        cursor: pointer;
+    }
+    & .close-button:hover {
+        text-shadow: 1px 1px 2px #666;
+    }
+}
+
+.b-popup-buttons {
+    padding: var(--popup-padding);
+    text-align: center;
+    & .auxiliary-button {
+        margin-left: var(--popup-padding);
+    }
+}
+
+
+.b-basket-popup .popup-content {
+    & table {
+        border-collapse: collapse;
+    }
+    & td {
+        padding: 0;
+    }
+    & td:nth-child(1) {
+        padding-left: 0;
+    }
+    & td:nth-child(2),
+    & td:nth-child(3) {
+        padding-left: var(--popup-padding);
+    }
+    & a {
+        color: var(--link-color);
+    }
+    & .delete-button {
+        color: #c00;
+        cursor: pointer;
+    }
+    & .delete-button:hover {
+        text-shadow: 1px 1px 2px #666;
+    }
+}
