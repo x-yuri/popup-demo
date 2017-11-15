@@ -1,0 +1,192 @@
+body {
+    margin: 0;
+    min-width: 1000px;
+}
+body, textarea {
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    color: #333;
+}
+textarea {
+    padding: 0;
+}
+.invisible {
+    visibility: hidden;
+}
+header {
+    height: 50px;
+    line-height: 50px;
+    border-width: 1px 0;
+    border-style: solid none;
+    border-color: #ebebeb;
+    background: #f8f8f8;
+}
+header .contacts {
+    float: right;
+    padding: 0 10px;
+}
+header .title {
+    font-size: 20px;
+    padding: 0 10px;
+}
+.content {
+    text-align: center;
+}
+footer {
+    height: 50px;
+    line-height: 50px;
+    border-width: 1px 0;
+    border-style: solid none;
+    border-color: #ebebeb;
+    background: #f8f8f8;
+    text-align: center;
+}
+.b-links {
+    position: fixed;
+    left: 20px;
+    top: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background: white;
+    font-size: 14px
+}
+.b-links a {
+    color: #337ab7;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.b-button {
+    display: inline-block;
+    line-height: 30px;
+    border: 1px solid #337ab7;
+    padding: 0 15px;
+    outline: none;
+    color: #fff;
+    background: #337ab7;
+    cursor: pointer;
+    font-size: 14px;
+    -webkit-transition: -webkit-box-shadow ease-in-out .15s;
+    transition: -webkit-box-shadow ease-in-out .15s;
+    transition: box-shadow ease-in-out .15s;
+    transition: box-shadow ease-in-out .15s, -webkit-box-shadow ease-in-out .15s
+}
+.b-button:hover {
+    border-color: rgb(48, 114, 171);
+    background: rgb(48, 114, 171);
+}
+.b-button:focus {
+    -webkit-box-shadow: 0 0 3px 0px #337ab7;
+            box-shadow: 0 0 3px 0px #337ab7;
+}
+.b-button.gray {
+    border-color: #ccc;
+    background: white;
+    color: #333;
+}
+.b-button.gray:hover {
+    border-color: rgb(196, 196, 196);
+    background: rgb(247, 247, 247);
+}
+.b-button.gray:focus {
+    -webkit-box-shadow: 0 0 3px 0px #ccc;
+            box-shadow: 0 0 3px 0px #ccc;
+}
+.site-outer-container {
+    overflow: hidden;
+}
+.b-popup-overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.2;
+    background: white;
+}
+.popup-wrapper {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow: auto
+}
+.popup-wrapper .popup-wrapper-2 {
+    border-collapse: collapse;
+    margin: auto;
+}
+.popup-wrapper .popup-wrapper-2 .popup-wrapper-3 {
+    padding: 20px;
+}
+.b-popup {
+    background: white;
+    border: 1px solid #ddd
+}
+.b-popup.position-fixed {
+    position: fixed;
+}
+.b-popup.position-absolute {
+    position: absolute;
+}
+.b-popup .popup-content {
+    padding: 15px;
+    padding-bottom: 0;
+    text-align: center;
+    font-size: 14px;
+}
+.b-popup-header {
+    height: 40px;
+    line-height: 40px;
+    padding: 0 15px;
+    border-bottom: 1px solid #ddd;
+    background: #f8f8f8
+}
+.b-popup-header .title {
+    font-size: 14px;
+}
+.b-popup-header .close-button {
+    float: right;
+    line-height: 18px;
+    width: 18px;
+    margin-right: -5px;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+    background: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+.b-popup-header .close-button:hover {
+    text-shadow: 1px 1px 2px #666;
+}
+.b-popup-buttons {
+    padding: 15px;
+    text-align: center
+}
+.b-popup-buttons .auxiliary-button {
+    margin-left: 15px;
+}
+.b-basket-popup .popup-content table {
+    border-collapse: collapse;
+}
+.b-basket-popup .popup-content td {
+    padding: 0;
+}
+.b-basket-popup .popup-content td:nth-child(1) {
+    padding-left: 0;
+}
+.b-basket-popup .popup-content td:nth-child(2),
+    .b-basket-popup .popup-content td:nth-child(3) {
+    padding-left: 15px;
+}
+.b-basket-popup .popup-content a {
+    color: #337ab7;
+}
+.b-basket-popup .popup-content .delete-button {
+    color: #c00;
+    cursor: pointer;
+}
+.b-basket-popup .popup-content .delete-button:hover {
+    text-shadow: 1px 1px 2px #666;
+}
+
+/*# sourceMappingURL=main-4e87ec7af25d4014cda9d2f8a5aa0e9b.css.map*/

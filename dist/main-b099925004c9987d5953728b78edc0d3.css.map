@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./1.css"],"names":[],"mappings":"AAAA;IACI,aAAa;IACb;QACI,aAAa;KAChB;CACJ","file":"main-b099925004c9987d5953728b78edc0d3.css","sourcesContent":["a {\n    color: white;\n    b {\n        color: black;\n    }\n}\n\n\n\n// WEBPACK FOOTER //\n// ./1.css"],"sourceRoot":""}
